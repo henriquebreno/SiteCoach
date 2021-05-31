@@ -7,52 +7,98 @@
 .navbar .navbar-nav .active a:hover,
 .navbar .navbar-nav .active a:focus {
     background-image: none;
-    background-color: #4189C7;
+    background-color: red;
     color: white;
 }
 
 @media (min-width: 768px) {
     /* On large screens, convert the nav menu to a vertical sidebar */
+
     .navbar {
-        height: 100%;
-        width: calc(25% - 20px);
-    }
-    .navbar {
+        width:100%;
+        position: absolute;
         border-radius: 0;
         border-width: 0;
+        margin-bottom: 0px;
+        background-color: black;
+        background-image: none;
+        min-height:100px;   
+    }
+    .nav-bar-link {
+        height:100%;
+
+        
+    }
+
+    .nav-bar-link ul {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .container {
+        height: 100px;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navbar-brand {
+        font-size: 14px !important;
+    }
+    .nav-bar-logo {
         height: 100%;
     }
-    .navbar-header {
-        float: none;
+    .nav-bar-ul {
+        line-height:100px;
     }
-    .navbar .navbar-collapse {
-        border-top: 1px solid #444;
-        padding: 0;
+    .custon-logo-font {
+        font-family:AmazDooMLeft;
     }
-    .navbar .container-fluid {
-        padding: 0;
-        margin: 0;
-    }
-    .navbar .container-fluid .navbar-brand {
-        margin: 0;
-    }
-    .navbar ul {
-        float: none;
-    }
-    .navbar li {
-        float: none;
-        font-size: 15px;
-        margin: 6px;
-    }
-    .navbar li a {
-        padding: 10px 16px;
-        border-radius: 4px;
-    }
-    .navbar a {
-        /* If a menu item's text is too long, truncate it */
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+
+}
+
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/brewmaster.jpg");
+    /* Set a specific height */
+    min-height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance.svg#ywftsvg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-bold.svg#ywftsvg") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Radiance';
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot");
+    src: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.eot?#iefix") format("embedded-opentype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.woff") format("woff"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.ttf") format("truetype"),url("https://cdn.cloudflare.steamstatic.com/apps/dota2/fonts/radiance-semibold.svg#ywftsvg") format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+* {
+    font-family: "Radiance","Noto Sans", sans-serif;
 }
